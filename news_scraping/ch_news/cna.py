@@ -121,25 +121,6 @@ def find_CNA_news(n_hours_ago,driver):
         time.sleep(2)  # 等待頁面響應
 
     print("\n")
-
-    # # 訪問每個新聞詳情頁,爬取內文
-    # for index in tqdm(news, desc='Processing CNA News'):
-    #     driver.get(news[index][1])
-    #     try:
-    #         category_element = driver.find_element(By.CSS_SELECTOR, "div.breadcrumb > a:nth-of-type(2)")
-    #         news_category = category_element.text if category_element else ""
-    #         news[index].append(news_category)
-
-    #         content_elements = driver.find_elements(By.CSS_SELECTOR, "p")
-    #         news_content = "\n".join([p.text for p in content_elements])
-    #         news[index].append(news_content)
-    #     except:
-    #         news[index].append("")
-    #         news[index].append("")
-    #     # print(f"標題: {news[index][0]}")
-    #     # print(f"分類: {news_category}")
-    #     # print(f"內文: {news_content}")
     
-
     return news
 
