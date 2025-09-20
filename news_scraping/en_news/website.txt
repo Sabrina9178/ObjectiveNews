@@ -1,0 +1,5 @@
+NBC
+FOX
+CNN
+NYT
+WaPo
