@@ -1,1 +1,1 @@
-This folder contains web scraping scripts for international (English) news websites.
+This folder contains web scraping scripts for Taiwanese (Chinese) news websites.
