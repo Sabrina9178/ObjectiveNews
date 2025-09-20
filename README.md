@@ -65,15 +65,21 @@ The system collects articles from diverse media sources, clusters them by event,
 
 ### 🔗 Resources
 - [Objective News Website](https://fao.zcr.mybluehost.me/)
-- [ClusterToGenerate Notebook](https://colab.research.google.com/drive/1gQ8Ysw7PNyKP__XrN4ghtE3f8__rmKnK?usp=sharing)
+- [ClusterToGenerate Notebook](https://colab.research.google.com/drive/1CetUiQ4Qs3dJnFY0FNgo7MPOfQTU_r4F?usp=sharing)
 
 ### 📂 Repository Structure
-├── NewsScraping/              # Web scraping scripts
+news_scraping/
 
-├── ClusterToGenerate.ipynb     # Colab notebook for preprocessing, clustering, generation
+  ├── ch_news/          # Raw news data in Chinese
+  
+  └── en_news/          # Raw news data in English
 
-├── models/                     # Saved clustering/embedding models
+ClusterToGenerate.ipynb   # Colab notebook for preprocessing, clustering, and news generation
 
-├── exampleData/                       # Raw and processed datasets
+example_data/
 
-└── exampleOutput/                     # Generated news, categories, keywords
+  ├── raw_data/          # 24-hour scraped news articles
+
+  ├── clustered_data/    # Results of clustering news articles by event
+
+  └── generated_news/    # Generated news articles including title, content, keywords, and category
