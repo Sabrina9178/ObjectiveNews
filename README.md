@@ -1,21 +1,23 @@
 # Objective News Website
-A system that leverages generative AI and clustering techniques to produce **objective and unbiased** news summaries from multiple media outlets.
+A workflow that leverages generative AI and clustering techniques to produce **objective and unbiased** news summaries from multiple media outlets.
 
-### 📌 Project Overview
-Most news outlets report with inherent bias, often presenting only one perspective. To address this, Objective News aims to provide readers with a **neutral, fact-based alternative**.
+### Project Overview
+Many news outlets today report with inherent bias, often presenting only a single perspective to influence audience opinions.
 
-The system collects articles from diverse media sources, clusters them by event, and uses **large language models (LLMs)** to generate objective news summaries. These summaries are then checked for neutrality before being published on the website.
+This project aims to provide a **neutral, multi-perspective alternative** through the Objective News Website, supported by an end-to-end framework for generating unbiased reports.
 
-### 🎯 Key Features
-- Automated **news scraping** from multiple Taiwanese outlets with different political orientations.
-- **Text preprocessing** to clean and standardize raw data.
-- **Vector embeddings & clustering** to group related articles into event-based clusters.
-- **Generative AI** to rewrite news into a neutral, fact-focused summary.
-- **Sentiment analysis** to ensure objectivity and prevent emotional bias.
-- Automatic generation of **keywords and categories** for publication.
-- Deployment to a **WordPress-based news platform**.
+### Workflow
+- **Web scraping**: Automated news collection using **Python (Selenium)** from multiple websites with diverse political orientations.
+- **Text preprocessing**: Standardized raw text data using **regular expressions**.
+- **Vector embeddings**: Converted textual data into vector representations.
+- **clustering**: Grouped related articles into event-based clusters.
+- **Generative AI**:
+  - Generated neutral, multi-perspective reports using the **GPT API** with event clusters and tailored prompts.
+  - Produced outputs including titles, content, arguments from different perspectives, keywords, and categories.
+- **Sentiment analysis**: Applied sentiment evaluation to ensure neutrality and reduce emotional bias.
+- **Presentation**: Deployed results to a **WordPress-based news platform**.
 
-### 🛠️ Tech Stack
+### Technical Detail
 #### Data Collection
 - **Language**: Python
 - **Library**: Selenium
@@ -53,7 +55,7 @@ The system collects articles from diverse media sources, clusters them by event,
 - **Platform**: WordPress (Objective News site)
 - **Publishing Workflow**: CSV → Plugin → Website
 
-### 🚀 Future Improvements
+### Future Improvements
 - **Fake News Filtering and Review**:
   Integrate post-review using reports from fact-checking organizations, and mark verified articles directly on the website.
 - **News Timeline**:
@@ -63,11 +65,11 @@ The system collects articles from diverse media sources, clusters them by event,
 - **Real-Time Streaming Pipeline**:
   Build a streaming-based ingestion pipeline for real-time news updates.
 
-### 🔗 Resources
+### Resources
 - [Objective News Website](https://fao.zcr.mybluehost.me/)
 - [ClusterToGenerate Notebook](https://colab.research.google.com/drive/1CetUiQ4Qs3dJnFY0FNgo7MPOfQTU_r4F?usp=sharing)
 
-### 📂 Repository Structure
+### Repository Structure
 news_scraping/
 
   ├── ch_news/          # Raw news data in Chinese
