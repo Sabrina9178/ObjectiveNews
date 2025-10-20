@@ -1,5 +1,5 @@
 # Objective News Website
-A workflow that leverages generative AI and clustering techniques to produce **objective and unbiased** news summaries from multiple media outlets.
+A workflow that leverages generative AI and clustering to produce **objective and unbiased** news summaries from multiple media outlets.
 
 ### Project Overview
 Many news outlets today report with inherent bias, often presenting only a single perspective to influence audience opinions.
